@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "your-project-name"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <your.email@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+aider-chat = "*"
+
+[tool.poetry.group.dev.dependencies]
+# Add your dev dependencies here if needed
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.package]
+include = []
