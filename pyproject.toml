@@ -1,20 +1,10 @@
 [tool.poetry]
-name = "your-project-name"
+name = "aider-runtime"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <your.email@example.com>"]
-readme = "README.md"
+description = "Aider runtime"
+package-mode = false
 
 [tool.poetry.dependencies]
-python = "^3.7"
-aider-chat = "*"
-
-[tool.poetry.group.dev.dependencies]
-# Add your dev dependencies here if needed
-
-[build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-[tool.poetry.package]
-include = []
+python = "3.11.*"
+aider-chat = {extras = ["browser"], version = "*"}
+google-cloud-aiplatform = "*"
